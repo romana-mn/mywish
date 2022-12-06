@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #01ACB4;
+    --secondary-color: #787C85;
+    --bcg-color: #4B5056;
+    --text-color: #FFFFFF;
+    --primary-text: 'Baloo 2';
+    --secondary-text: 'Nunito';
+}
+body {
+    background: var(--bcg-color);
+}
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.container {
+    padding: 0 81px;
+    margin: 0 auto;
+}
+/* wishlist */
+.section-mywish {
+    background: var(--secondary-color);
+   
+}
+
+.container-mywish {
+    max-width: 1440px; 
+    padding-top: 60px; 
+    padding-bottom: 0; 
+    margin: 0 auto auto;
+}
+.section-title {
+    font-family: var(--primary-text);
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    
+}
+.dropdown-card {
+    display: none;
+} 
+.decor-min-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    mix-blend-mode: multiply;
+}
+
+.decor-max-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    mix-blend-mode: multiply;
+}
+.box-title {
+    max-width: 400px;
+    width: 100%;
+    text-align: center; 
+    margin: 0 auto 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.mywish-img {
+    width: 386px;
+    height: 386px;
+    border-radius: 6px;
+}
+.mywish-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+.wishlist1 {
+    margin-bottom: 60px;
+}
+.wishlist2 {
+    margin-bottom: 40px;
+} 
+
+.mywish-item {
+    width: calc((100% - 120px)/3);
+}
+.ellipses {
+    width: 100%;
+    position: relative;
+}
+
+.ellipse-big {
+    width: 408px;
+    height: 408px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    left: 394px;
+   
+}
+
+.ellipse-little {
+    width: 167px;
+    height: 167px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    mix-blend-mode: multiply;
+    margin-left: 718px;
+}
+.mywish-img:hover .dropdown-card {
+    display: block;
+    width: 386px;
+    height: 386px;
+    border-radius: 6px;
+    padding: 57px 30px 40px 30px;
+    background: var(--primary-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.mywish-text-card {
+    font-family: var(--primary-text);
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--text-color);
+    margin: 0 30px 40px;
+}
+.present-icon {
+    margin-left: 139px;
+    margin-bottom: 60px;
+}
+.store-link {
+    font-family: var(--secondary-text);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    margin: 0;
+}
