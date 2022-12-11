@@ -21,8 +21,7 @@ body {
 }
 /* wishlist */
 .section-mywish {
-    background: var(--secondary-color);
-   
+    background: var(--secondary-color); 
 }
 
 .container-mywish {
@@ -36,8 +35,7 @@ body {
     font-weight: 800;
     font-size: 40px;
     line-height: 1.6;
-    color: var(--primary-color);
-    
+    color: var(--primary-color);   
 }
 .dropdown-card {
     display: none;
@@ -79,46 +77,25 @@ body {
 .wishlist1 {
     margin-bottom: 60px;
 }
-.wishlist2 {
-    margin-bottom: 40px;
-} 
 
 .mywish-item {
     width: calc((100% - 120px)/3);
-}
-.ellipses {
-    width: 100%;
     position: relative;
 }
 
-.ellipse-big {
-    width: 408px;
-    height: 408px;
-    border-radius: 50%;
-    background: var(--secondary-color);
-    mix-blend-mode: multiply;
-    position: absolute;
-    top: 0;
-    left: 394px;
-   
-}
 
-.ellipse-little {
-    width: 167px;
-    height: 167px;
-    border-radius: 50%;
-    background: var(--secondary-color);
-    mix-blend-mode: multiply;
-    margin-left: 718px;
-}
-.mywish-img:hover .dropdown-card {
+.mywish-item:hover .dropdown-card {
     display: block;
     width: 386px;
     height: 386px;
     border-radius: 6px;
+    border: 1px solid var(--primary-color);
     padding: 57px 30px 40px 30px;
     background: var(--primary-color);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 10px 40px rgba(120, 124, 133, 0.4));
+    position: absolute;
+    top: 0;
+    bottom: 0;
 }
 .mywish-text-card {
     font-family: var(--primary-text);
@@ -144,3 +121,64 @@ body {
     display: block;
     margin: 0;
 }
+
+.ellipses {
+    max-width: 491px ;
+    min-height: 160px;
+    padding-top: 40px;
+    position: relative;
+    background: var(--secondary-color);
+    margin: 0 393px 0;
+}
+
+.ellipse-big {
+    width: 408px;
+    height: 408px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 40px;
+}
+
+.ellipse-little {
+    width: 167px;
+    height: 167px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    mix-blend-mode: multiply;
+    position: absolute;
+    left: 324px;
+}
+.footer {
+    background: var(--secondary-color);
+}
+.container-footer {
+    max-width: 1440px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin: 0 auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name-mywish {
+    font-family: var(--primary-text);
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 48px;
+    margin: 0;
+}
+.social-list {
+    display: flex;
+    gap: 10px;
+}
+.social-item {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
