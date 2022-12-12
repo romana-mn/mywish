@@ -80,7 +80,7 @@ body {
 
 .mywish-item {
     width: calc((100% - 120px)/3);
-    position: relative;
+    position: relative;  
 }
 
 
@@ -96,7 +96,11 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
+
 }
+
+
+
 .mywish-text-card {
     font-family: var(--primary-text);
     font-weight: 800;
@@ -150,6 +154,7 @@ body {
     position: absolute;
     left: 324px;
 }
+
 .footer {
     background: var(--secondary-color);
 }
@@ -182,3 +187,12 @@ body {
     justify-content: center;
     align-items: center;
 } 
+@media screen 
+and (min-width: 375px) {
+    .container {
+        padding: 0 20px;
+        margin: 0 auto;
+        }
+       
+}
+    
